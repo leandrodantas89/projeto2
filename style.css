@@ -29,13 +29,14 @@ img{
     padding: 20px;
     width: 90px;
     margin-right: 10px;
-    margin-left: 5px;
     border-radius: 5px;
+    align-items: center;
 }
 
 .menu ul li{
     list-style-type: none;
-    text-align: center;
+    /*text-align: center;*/
+    
     
     
 }
@@ -43,19 +44,21 @@ img{
 .menu li{
     padding: 20px; /*espaçamento entre os menus*/
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    
 }
 
 .menu a{
     text-decoration: none;
+    text-align: center;
+    color: black
     
-    
-    
-
 }
 
-.menu a:hover{
-    background-color: rgb(126, 182, 182);
+a:hover{
     border-radius: 2px;
+    transition-duration: 1s;
+    font-size: 110%;
 }
 
 ul{
@@ -68,19 +71,73 @@ ul{
     text-align: center;
     margin-right: 10px;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
     
 }
 
+.content p{
+}
+
 h1{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif;
+    text-shadow: 0.5px 0.5px 0 rgba(0, 0, 0, 0.15);
+    color: rgb(200, 245, 179);
+}
+
+h3{
     font-style: italic;
 }
 
-.footer{
+.footer-main{
+    margin: 0 auto;
+    text-align: center;
     text-align: center;
     padding: 20px;
     background-color: rgb(187, 221, 200);
     color: black;
     margin-top: 10px;
     
+     
+    
+}
+.footer-cont{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 5px;
+    font-size: 0.7em;
+    
+}
+.footer-cont a{
+    text-decoration: none;
+    color: rgb(24, 24, 26);
+    padding: 5px;
+    
+}
+
+.footer-cont a:hover{
+    background-color: rgb(214, 248, 248);
+    border-radius: 3px;
+    transition-duration: 0.5s;
+    transform: (-0px, -0px);
+    padding: 1px 10px;
+    box-shadow: 1px 2px 1px rga(0,0,0,255);
+}
+
+.footer-info{
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    font-size: 1em;
+}
+
+.redes img{
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+}
+
+.redes a{
+    text-decoration: none;
 }
