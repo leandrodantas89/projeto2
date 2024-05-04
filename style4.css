@@ -1,0 +1,228 @@
+@charset "UTF-8";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    padding: 20px;
+    text-align: center;
+    background-image: url(img/anna-pelzer-IGfIGP5ONV0-unsplash.jpg);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+    
+    
+}
+
+img{
+    width: 100%;
+    height: 500px;
+    
+}
+
+.container{
+    display: flex;
+}
+
+.menu{
+    background-color: rgb(233, 250, 220);
+    padding: 20px;
+    width: 200px;
+    margin-right: 10px;
+    border-radius: 8px;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    height: 483px;
+    margin-bottom: 100px;
+     
+    
+}
+
+.menu ul li{
+    list-style-type:none;
+}
+
+.menu li{
+    padding: 45px; /*espaçamento entre os menus*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;    
+}
+
+.menu a{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(38, 107, 6)
+
+    
+}
+
+a:hover{
+    border-radius: 2px;
+    transition-duration: 1s;
+    font-size: 110%;
+}
+
+
+
+.menu ul li a{
+    text-align: center;
+    color: rgb(87, 131, 5);
+    white-space: nowrap;/*evita quebra de linha*/
+
+}
+
+.menu li a::before {
+    content: ''; /* Adiciona um pseudo-elemento antes do conteúdo real */
+    position: absolute; /* Posiciona o pseudo-elemento */
+    top: 0;
+    left: 0;
+    width: 100%; /* Faz com que o pseudo-elemento cubra todo o item de menu */
+    height: 100%; /* Faz com que o pseudo-elemento cubra todo o item de menu */
+    
+    z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo real */
+    transition: all 0.3s ease; /* Adiciona uma transição suave para a mudança de estilo */
+    border-radius: 5px;
+}
+
+.menu li a:hover::before {
+    background-color: rgba(130, 243, 145, 0.24); /* Define a cor de fundo quando hover */
+    transform: scale(1.5); /* Aumenta ligeiramente o tamanho do pseudo-elemento */
+}
+
+.menu li a {
+    text-decoration: none;
+    text-align: center;
+    color: rgb(6, 160, 101);
+    position: relative; /* Adiciona posição relativa para que possamos posicionar o texto */
+    z-index: 1; /* Coloca o texto à frente do pseudo-elemento */
+    transition: all 0.3s ease; /* Adiciona uma transição suave para a mudança de estilo */
+}
+
+.menu li:hover a {
+    transform: translateZ(50px); /* Move o texto para frente */
+}
+
+.content {
+
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    width: calc(100% - 220px); /* Considerando a largura do menu */
+    margin-left: 20px; /* Largura do menu */
+    margin-bottom: 10px; /* Ajuste conforme necessário para evitar sobreposição com o rodapé */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando o conteúdo ultrapassa a altura do elemento */
+    /*margin-bottom: 300px;*/
+    
+    
+    
+    
+    
+    
+
+}
+
+.content p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+    overflow-y: auto;
+    
+}
+
+
+
+h1{
+    font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif;
+    text-shadow: black;
+    color: rgb(75, 204, 15);
+    font-size: 30px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    text-shadow: 0.3em 0.1em 0.8em #657860;
+}
+
+#logo{
+    width: 50px;
+    height: 50px;
+}
+
+h3{
+    font-style: italic;
+    padding: 10px;
+}
+
+.footer-main{
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(187, 221, 200);
+    color: black;
+    bottom: 0;
+    width:100%; 
+    position: relative;
+    height: 220px;   
+    
+}
+
+.footer-container{
+    display: inline-block;
+    margin: auto;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.footer-cont{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    align-items: center;
+    
+    
+}
+.footer-cont a{
+    text-decoration: none;
+    color: rgb(24, 24, 26);
+    padding: 5px;
+    text-align: center;
+    align-items:center ;
+    
+}
+
+.footer-cont a:hover{
+    border-radius: 3px;
+    transition-duration: 0.5s;
+    transform: (-0px, -0px);
+    padding: 1px 10px;
+    box-shadow: 1px 2px 1px rga(0,0,0,255);
+}
+
+.footer-info{
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    /*display: inline-block;*/
+    font-size: 20px;
+}
+
+.redes img{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+.redes a{
+    text-decoration: none;
+}
