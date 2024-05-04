@@ -115,7 +115,7 @@ a:hover{
     font-family: Arial, Helvetica, sans-serif;
     width: calc(100% - 220px); /* Considerando a largura do menu */
     margin-left: 20px; /* Largura do menu */
-    margin-bottom: 100px; /* Ajuste conforme necessário para evitar sobreposição com o rodapé */
+    margin-bottom: 10px; /* Ajuste conforme necessário para evitar sobreposição com o rodapé */
     overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando o conteúdo ultrapassa a altura do elemento */
     /*margin-bottom: 300px;*/
     
@@ -168,12 +168,17 @@ h3{
     bottom: 0;
     width:100%; 
     position: relative;
-    height: 220px;
-    
- 
- 
+    height: 220px;   
     
 }
+
+.footer-container{
+    display: inline-block;
+    margin: auto;
+    align-items: center;
+    margin-left: 150px;
+}
+
 .footer-cont{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
@@ -181,12 +186,16 @@ h3{
     padding: 5px;
     font-size: 15px;
     font-weight: bold;
+    align-items: center;
+    
     
 }
 .footer-cont a{
     text-decoration: none;
     color: rgb(24, 24, 26);
     padding: 5px;
+    text-align: center;
+    align-items:center ;
     
 }
 
@@ -202,14 +211,16 @@ h3{
     text-align: center;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    display: inline-block;
+    /*display: inline-block;*/
     font-size: 20px;
 }
 
 .redes img{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     padding: 10px;
+    text-align: center;
+    align-items: center;
 }
 
 .redes a{
