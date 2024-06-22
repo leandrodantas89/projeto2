@@ -1,34 +1,31 @@
 @charset "UTF-8";
 
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.header{
+
+.header {
     padding: 20px;
     text-align: center;
-    background-image: url(img/anna-pelzer-IGfIGP5ONV0-unsplash.jpg);
+    background-image: url(img/flat-lay-health-still-life-with-copy-space.jpg);
     height: 350px;
     background-size: cover;
     background-position: center;
     margin-bottom: 10px;
-    
-    
 }
 
-img{
+img {
     width: 100%;
     height: 500px;
-    
 }
 
-.container{
+.container {
     display: flex;
 }
 
-.menu{
+.menu {
     background-color: rgb(233, 250, 220);
     padding: 20px;
     width: 200px;
@@ -39,42 +36,35 @@ img{
     justify-content: center;
     height: 483px;
     margin-bottom: 100px;
-     
-    
 }
 
-.menu ul li{
-    list-style-type:none;
+.menu ul li {
+    list-style-type: none;
 }
 
-.menu li{
-    padding: 45px; /*espaçamento entre os menus*/
+.menu li {
+    padding: 45px; /* espaçamento entre os menus */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    font-weight: bold;    
+    font-weight: bold;
 }
 
-.menu a{
+.menu a {
     text-decoration: none;
     text-align: center;
-    color: rgb(38, 107, 6)
-
-    
+    color: rgb(38, 107, 6);
 }
 
-a:hover{
+a:hover {
     border-radius: 2px;
     transition-duration: 1s;
     font-size: 110%;
 }
 
-
-
-.menu ul li a{
+.menu ul li a {
     text-align: center;
     color: rgb(87, 131, 5);
-    white-space: nowrap;/*evita quebra de linha*/
-
+    white-space: nowrap; /* evita quebra de linha */
 }
 
 .menu li a::before {
@@ -84,7 +74,6 @@ a:hover{
     left: 0;
     width: 100%; /* Faz com que o pseudo-elemento cubra todo o item de menu */
     height: 100%; /* Faz com que o pseudo-elemento cubra todo o item de menu */
-    
     z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo real */
     transition: all 0.3s ease; /* Adiciona uma transição suave para a mudança de estilo */
     border-radius: 5px;
@@ -109,7 +98,6 @@ a:hover{
 }
 
 .content {
-
     padding: 20px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -117,29 +105,76 @@ a:hover{
     margin-left: 20px; /* Largura do menu */
     margin-bottom: 10px; /* Ajuste conforme necessário para evitar sobreposição com o rodapé */
     overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando o conteúdo ultrapassa a altura do elemento */
-    /*margin-bottom: 300px;*/
-    
-    
-    
-    
-    
-    
-
 }
 
-.content p{
+.content p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     padding: 15px;
     margin: auto;
     text-align: center;
     overflow-y: auto;
-    
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
 
+label {
+    margin-top: 10px;
+    color: rgb(6, 160, 101);
+    font-weight: bold;
+}
 
-h1{
+input, textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"], input[type="reset"] {
+    width: 100px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: rgb(75, 204, 15);
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.button-group input[type="submit"],
+.button-group input[type="reset"] {
+    width: 48%;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+input[type="reset"] {
+    background-color: #f44336;
+    color: white;
+}
+
+h1 {
     font-family: 'Courier New', Courier, monospace, Helvetica, sans-serif;
     text-shadow: black;
     color: rgb(75, 204, 15);
@@ -150,79 +185,71 @@ h1{
     text-shadow: 0.3em 0.1em 0.8em #657860;
 }
 
-#logo{
+#logo {
     width: 50px;
     height: 50px;
 }
 
-h3{
+h3 {
     font-style: italic;
     padding: 10px;
 }
 
-.footer-main{
+.footer-main {
     text-align: center;
     padding: 20px;
     background-color: rgb(187, 221, 200);
     color: black;
     bottom: 0;
-    width:100%; 
+    width: 100%;
     position: relative;
-    height: 220px;   
-    
-}
-
-.footer-container{
-    display: inline-block;
-    margin: auto;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin-left: 150px;
+    justify-content: center;
 }
 
-.footer-cont{
+.footer-cont {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 5px;
     font-size: 15px;
     font-weight: bold;
-    align-items: center;
-    
-    
 }
-.footer-cont a{
+
+.footer-cont a {
     text-decoration: none;
     color: rgb(24, 24, 26);
     padding: 5px;
     text-align: center;
-    align-items:center ;
-    
 }
 
-.footer-cont a:hover{
+.footer-cont a:hover {
     border-radius: 3px;
     transition-duration: 0.5s;
-    transform: (-0px, -0px);
     padding: 1px 10px;
     box-shadow: 1px 2px 1px rga(0,0,0,255);
 }
 
-.footer-info{
+.footer-info {
     text-align: center;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    /*display: inline-block;*/
     font-size: 20px;
 }
 
-.redes img{
+.redes {
+    text-align: center;
+}
+
+.redes img {
     width: 60px;
     height: 60px;
     padding: 10px;
-    text-align: center;
-    align-items: center;
 }
 
-.redes a{
+.redes a {
     text-decoration: none;
 }
